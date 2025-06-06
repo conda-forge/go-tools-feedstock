@@ -1,4 +1,4 @@
-{% set version = "0.32.0" %}
+{% set version = "0.34.0" %}
 
 package:
   name: go-tools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/golang/tools/archive/v{{ version }}.tar.gz
-  sha256: f2b22107aaea83bbcc4a34c86e4331dda035f71e72bdbc057c32ce7072a17c5b
+  sha256: ed3063f864a4c3e12f02dc4553d087b22b3b5f09f881e977613772e3f2324ab9
 
 build:
   number: 0
