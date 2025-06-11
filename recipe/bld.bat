@@ -2,10 +2,10 @@
 @setlocal EnableDelayedExpansion
 
 :: These commands appear to have been removed
-:: auth\authtest ^
-:: auth\cookieauth ^
-:: auth\gitauth ^
-:: auth\netrcauth ^
+:: auth\authtest
+:: auth\cookieauth
+:: auth\gitauth
+:: auth\netrcauth
 
 set cmd_names=^
     bisect ^
