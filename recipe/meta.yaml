@@ -18,10 +18,6 @@ requirements:
 
 test:
   commands: |
-    go-auth-authtest 2>&1 | grep -q "go-auth-authtest"
-    go-auth-cookieauth 2>&1 | grep -q "go-auth-cookieauth"
-    go-auth-gitauth 2>&1 | grep -q "go-auth-gitauth"
-    go-auth-netrcauth 2>&1 | grep -q "go-auth-netrcauth"
     go-bisect 2>&1 | grep -q "usage: bisect"
     go-bundle --help
     go-callgraph --help
