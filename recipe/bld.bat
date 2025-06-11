@@ -1,11 +1,13 @@
 @echo on
 @setlocal EnableDelayedExpansion
 
+:: These commands appear to have been removed
+:: auth\authtest ^
+:: auth\cookieauth ^
+:: auth\gitauth ^
+:: auth\netrcauth ^
+
 set cmd_names=^
-    auth\authtest ^
-    auth\cookieauth ^
-    auth\gitauth ^
-    auth\netrcauth ^
     bisect ^
     bundle ^
     callgraph ^
