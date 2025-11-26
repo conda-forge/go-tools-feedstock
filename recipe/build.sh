@@ -16,11 +16,12 @@ build_cmd() {
 
 export -f build_cmd
 
+# Removed executables
+# auth/authtest
+# auth/cookieauth
+# auth/gitauth
+# auth/netrcauth
 cmd_names=(
-    auth/authtest
-    auth/cookieauth
-    auth/gitauth
-    auth/netrcauth
     bisect
     bundle
     callgraph

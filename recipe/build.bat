@@ -1,11 +1,12 @@
 @echo on
 @setlocal EnableDelayedExpansion
 
+:: Removed executables
+:: auth\authtest ^
+:: auth\cookieauth ^
+:: auth\gitauth ^
+:: auth\netrcauth ^
 set cmd_names=^
-    auth\authtest ^
-    auth\cookieauth ^
-    auth\gitauth ^
-    auth\netrcauth ^
     bisect ^
     bundle ^
     callgraph ^

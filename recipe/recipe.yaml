@@ -12,7 +12,7 @@ source:
   sha256: 299d2320e8f6adb5b53fb1a32e613b00cd2263237c2c4f8f3a68885040b2cfb9
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -25,10 +25,6 @@ tests:
         - if: win
           then: m2-grep
     script: |
-      go-auth-authtest 2>&1 | grep -q "go-auth-authtest"
-      go-auth-cookieauth 2>&1 | grep -q "go-auth-cookieauth"
-      go-auth-gitauth 2>&1 | grep -q "go-auth-gitauth"
-      go-auth-netrcauth 2>&1 | grep -q "go-auth-netrcauth"
       go-bisect 2>&1 | grep -q "usage: bisect"
       go-bundle --help
       go-callgraph --help
