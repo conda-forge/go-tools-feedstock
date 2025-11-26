@@ -2,10 +2,11 @@
 @setlocal EnableDelayedExpansion
 
 :: Removed executables
-:: auth\authtest ^
-:: auth\cookieauth ^
-:: auth\gitauth ^
-:: auth\netrcauth ^
+:: auth\authtest
+:: auth\cookieauth
+:: auth\gitauth
+:: auth\netrcauth
+
 set cmd_names=^
     bisect ^
     bundle ^
