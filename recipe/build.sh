@@ -10,17 +10,18 @@ build_cmd() {
     else
         bin_name=${cmd_name//\//-}
     fi
-    go build -modcacherw -buildmode=pie -trimpath -o=${PREFIX}/bin/${bin_name} -ldflags="-s -w" ./cmd/${cmd_name}
+    go build -o=${PREFIX}/bin/${bin_name} -ldflags="-s -w" ./cmd/${cmd_name}
     go-licenses save ./cmd/${cmd_name} --save_path=license-files/${cmd_name}
 }
 
 export -f build_cmd
 
+# Removed executables
+# auth/authtest
+# auth/cookieauth
+# auth/gitauth
+# auth/netrcauth
 cmd_names=(
-    auth/authtest
-    auth/cookieauth
-    auth/gitauth
-    auth/netrcauth
     bisect
     bundle
     callgraph
