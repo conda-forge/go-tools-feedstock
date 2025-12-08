@@ -33,7 +33,6 @@ cmd_names=(
     fiximports
     go-contrib-init
     godex
-    godoc
     goimports
     gomvpkg
     gonew
