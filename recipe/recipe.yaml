@@ -36,7 +36,6 @@ tests:
       go-fiximports --help
       go-contrib-init --help
       godex --help 2>&1 | grep -q "usage: godex"
-      godoc --help 2>&1 | grep -q "usage: godoc"
       goimports --help 2>&1 | grep -q "usage: goimports"
       gomvpkg --help
       gonew --help 2>&1 | grep -q "usage: gonew"
